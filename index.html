@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/style/style.css"> 
     <title>Plantas</title>
 
     <!-- vinculos para bootstrap -->
@@ -19,34 +20,76 @@
 <body>
 
     <!-- Encabezado pagina "header" -->
-    <header class="jumbotron bg-dark text-center text-white">
-        <h1>Venta de Plantas</h1>
+    <header class="jumbotron bg-dark text-center text-white header">
+        <h1>PlantasVarias</h1>
         <p>Aquí podra encontra una variada selección de plantas para decorar</p>
     </header>
 
     <!-- barra de navegación "nav" -->
-    <nav class="navbar bg-danger"> <!--falta arreglar esto-->
-
-        <ul class="nav">
+    <nav class="navbar navbar-expand bg-danger fixed-top"> <!--falta arreglar esto-->
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">PlantasVarias</a>
+        <!-- Links -->
+        <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="#">uno</a>
+                <a class="nav-link" href="#">Nosotros</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">dos</a>
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop-1" data-toggle="dropdown">
+                    Plantas
+                </a>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Interior</a>
+                    <a href="#" class="dropdown-item">Exterior</a>
+                    <a href="#" class="dropdown-item">Arboles</a>
+                </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">tres</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop-2" data-toggle="dropdown">
+                    Fertilizantes
+                </a>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Tradicionales</a>
+                    <a href="#" class="dropdown-item">Organicos</a>
+                    <a href="#" class="dropdown-item">Abonos</a>
+                </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">cuatro</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop-3" data-toggle="dropdown">
+                    Fitosanitarios
+                </a>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Insecticidas</a>
+                    <a href="#" class="dropdown-item">Aracnicidas</a>
+                    <a href="#" class="dropdown-item">Nematicidas</a>
+                    <a href="#" class="dropdown-item">Fungicidas</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop-4" data-toggle="dropdown">
+                    Accesorios
+                </a>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Maceteros</a>
+                    <a href="#" class="dropdown-item">Herramientas</a>
+                    <a href="#" class="dropdown-item">Riego</a>
+                    <a href="#" class="dropdown-item">Decoración</a>
+                </div>
             </li>
         </ul>
+        <!-- Formas navbar -->
+        <form class="form-inline" action="/action_page.php">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-success" type="submit">Buscar</button>
+          </form>
     </nav>
 
     <!-- Cuerpo pagina "main" -->
-    <main class="container bg-secondary">
+    <main class="container bg-secondary main">
 
         <!-- sección 1 -->
+        <!-- carousel -->
         <section class="conteiner text-center">
             <div class="carousel slide" data-ride="carousel" id="demo">
                 <!-- indicadores -->
@@ -85,83 +128,140 @@
         <section class="row">
             <!-- contenido principal -->
             <div class="col-8">
-                <h2>Descripción contenido</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus tenetur architecto repellendus deserunt beatae consectetur repudiandae, optio id, voluptate velit dolorum ducimus blanditiis provident laudantium aliquid at dolorem! Corporis, doloremque.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, cumque est! Nobis, consequatur numquam. Sit nesciunt nemo voluptate esse. Error eveniet eum debitis perferendis, laudantium reprehenderit ea iusto tenetur dignissimos.</p>
+                <div>
+                    <nav class="navbar bg-dark navbar-expand">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#moderno">Moderno</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#minimalista">Minimalista</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#oriental">Oriental</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#productivo">Productivo</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div id="moderno" class="conteiner-fluid bg-white">
+                        <h2>Jardines Modernos</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis harum praesentium commodi nesciunt et ab quibusdam veritatis, a eaque quidem eveniet incidunt nam exercitationem accusamus alias! Tempore facere quod repellat nobis sequi illum recusandae veniam modi, ipsa ad quis dignissimos similique minima natus, quidem id, voluptatum magni praesentium delectus maxime!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt id praesentium, distinctio aliquid quasi est facere nam iure repellat temporibus at dignissimos rerum, sapiente quae! Doloribus nesciunt obcaecati adipisci. Magnam natus, quas aliquam soluta error possimus, repellendus esse debitis molestiae a minus labore cupiditate recusandae repudiandae culpa provident amet officiis!</p>
+                        
+                    </div>
+                    <div id="minimalista" class="conteiner-fluid bg-secondary text-white">
+                        <h2>Jardines Minimalistas</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt id praesentium, distinctio aliquid quasi est facere nam iure repellat temporibus at dignissimos rerum, sapiente quae! Doloribus nesciunt obcaecati adipisci. Magnam natus, quas aliquam soluta error possimus, repellendus esse debitis molestiae a minus labore cupiditate recusandae repudiandae culpa provident amet officiis!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt id praesentium, distinctio aliquid quasi est facere nam iure repellat temporibus at dignissimos rerum, sapiente quae! Doloribus nesciunt obcaecati adipisci. Magnam natus, quas aliquam soluta error possimus, repellendus esse debitis molestiae a minus labore cupiditate recusandae repudiandae culpa provident amet officiis!</p>
+                        
+                    </div>
+                    <div id="oriental" class="conteiner-fluid bg-white">
+                        <h2>Jardines Orientales</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ab porro hic maiores excepturi! Aut blanditiis labore quam explicabo maxime dolor esse eius molestiae assumenda nam nulla necessitatibus nobis iusto odio praesentium, eveniet pariatur, odit sit quos sint soluta. Facilis doloremque repudiandae necessitatibus et eum ad nihil mollitia error eaque.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt id praesentium, distinctio aliquid quasi est facere nam iure repellat temporibus at dignissimos rerum, sapiente quae! Doloribus nesciunt obcaecati adipisci. Magnam natus, quas aliquam soluta error possimus, repellendus esse debitis molestiae a minus labore cupiditate recusandae repudiandae culpa provident amet officiis!</p>
+                        
+                    </div>
+                    <div id="productivo" class="conteiner-fluid bg-secondary text-white">
+                        <h2>Jardines Productivos</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quis, iure ex voluptatem sunt eligendi similique enim aut. Sint quis consectetur cupiditate in sunt minus porro rerum officia, illum aut sapiente natus quae ex accusamus soluta, id esse repudiandae reiciendis. Placeat tempora quas consectetur amet earum quisquam id illum. Eius!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt id praesentium, distinctio aliquid quasi est facere nam iure repellat temporibus at dignissimos rerum, sapiente quae! Doloribus nesciunt obcaecati adipisci. Magnam natus, quas aliquam soluta error possimus, repellendus esse debitis molestiae a minus labore cupiditate recusandae repudiandae culpa provident amet officiis!</p>
+                        
+                    </div>
+                </div>
             </div>
 
             <!-- contenido secundaro izquierdo -->
             <article class="col-4">
                 <article class="row">
-                    <h4>Alternativa 1</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <div class="btn bg-success">
+                        <h4>Bonsai</h4>
+                        <img src="/static/bonsai.png" alt="bonsai" class="img-fluid">
+                    </div>
                 </article>
                 <article class="row">
-                    <h4>Alternativa 2</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <div class="btn bg-success">
+                        <h4>Terrario</h4>
+                        <img src="/static/terrario_1.png" alt="Terrario" class="img-fluid">
+                    </div>
                 </article>
                 <article class="row">
-                    <h4>Alternativa 3</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <div class="btn bg-success">
+                        <h4>kokedama</h4>
+                        <img src="/static/kokedama_1.png" alt="kokedama" class="img-fluid">
+                    </div>
                 </article>
                 <article class="row">
-                    <h4>Alternativa 4</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <div class="btn bg-success">
+                        <h4>Jardin Acuatico</h4>
+                        <img src="/static/jardinacuatico_1.png" alt="jardinacuatico" class="img-fluid">
+                    </div>
                 </article>
             </article>
         </section>
 
-        <!-- sección 3 -->
-        <section class="row">
-            <div class="col-3">
-                <div class="card" style="width:260px"> <!--ver style en css-->
-                    <img class="card-img-top" src="/static/suculentas.png" alt="suculenta_1">
-                    <div class="card-body">
-                        <h4 class="card-title">Suculentas</h4>
-                        <p class="card-text">$9.999</p>
-                        <a class="btn btn-primary" href="#">Comprar</a>
+        <!-- Detalles -->
+        <details class="conteiner">
+            <summary>
+                Productos Destacados
+            </summary>
+            <div class="row">
+                <div class="col-3">
+                    <div class="card" style="width:260px"> <!--ver style en css-->
+                        <img class="card-img-top" src="/static/suculentas.png" alt="suculenta_1">
+                        <div class="card-body">
+                            <h4 class="card-title">Suculentas</h4>
+                            <p class="card-text">$9.999</p>
+                            <a class="btn btn-primary" href="#">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" style="width:260px"> <!--ver style en css-->
+                        <img class="card-img-top" src="/static/captus.png" alt="captus_1">
+                        <div class="card-body">
+                            <h4 class="card-title">Cactus</h4>
+                            <p class="card-text">$9.999</p>
+                            <a class="btn btn-primary" href="#">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" style="width:260px"> <!--ver style en css-->
+                        <img class="card-img-top" src="/static/helechos.png" alt="helecho_1">
+                        <div class="card-body">
+                            <h4 class="card-title">Helechos</h4>
+                            <p class="card-text">$9.999</p>
+                            <a class="btn btn-primary" href="#">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card" style="width:260px"> <!--ver style en css-->
+                        <img class="card-img-top" src="/static/musgo_1.png" alt="bonsai_1">
+                        <div class="card-body">
+                            <h4 class="card-title">musgo</h4>
+                            <p class="card-text">$9.999</p>
+                            <a class="btn btn-primary" href="#">Comprar</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-3">
-                <div class="card" style="width:260px"> <!--ver style en css-->
-                    <img class="card-img-top" src="/static/captus.png" alt="captus_1">
-                    <div class="card-body">
-                        <h4 class="card-title">Suculentas</h4>
-                        <p class="card-text">$9.999</p>
-                        <a class="btn btn-primary" href="#">Comprar</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card" style="width:260px"> <!--ver style en css-->
-                    <img class="card-img-top" src="/static/helechos.png" alt="helecho_1">
-                    <div class="card-body">
-                        <h4 class="card-title">Suculentas</h4>
-                        <p class="card-text">$9.999</p>
-                        <a class="btn btn-primary" href="#">Comprar</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card" style="width:260px"> <!--ver style en css-->
-                    <img class="card-img-top" src="/static/bonsai.png" alt="bonsai_1">
-                    <div class="card-body">
-                        <h4 class="card-title">Suculentas</h4>
-                        <p class="card-text">$9.999</p>
-                        <a class="btn btn-primary" href="#">Comprar</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </details>
         
     </main>
 
     <!-- Pie de pagina "footer"-->
-    <footer class="jumbotron bg-dark text-center text-white">
+    <footer class="jumbotron bg-dark text-center text-white footer">
         <h3>Contacto</h3>
         <p>contacto@plantasvarias.netlify.app</p>
     </footer>
+
+    <header></header>
+    <header class="header"></header>
+    <div class="header"></div>
+
 
 </body>
 </html>
